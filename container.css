@@ -5,7 +5,7 @@ html,body{
     width: 100%;
 }
 .container{
-    background-image: url(../valoimg/Beta\ Key\ Art_VALORANT.jpg);
+    background-image: url(valoimg/Beta\ Key\ Art_VALORANT.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;

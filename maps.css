@@ -1,0 +1,76 @@
+.navbar{ 
+    display: flex;
+    background-color: black;
+    padding: 0 4%;
+    justify-content: space-between;
+}
+
+.nav-list{
+    
+    display: flex;
+    margin-left: auto;
+    list-style-type: none;
+    
+}
+
+.nav-list a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    margin-left: 15em;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 19px;
+    letter-spacing: 0.2em;
+    
+}
+
+.nav-list a:hover{
+    background-color: rgb(26, 26, 26);  
+}
+
+.logo img{
+    filter: invert(1);
+    width: 80px;
+    height: 80px;
+}
+.logo{
+    margin-left: -4%;
+    display: inline-block; 
+    text-decoration: none; 
+
+}
+.logo:hover{
+    background-color: rgb(12, 12, 12);  
+}
+
+.logo2 img{
+    filter: invert(1);
+    width: 312px;
+    height: 80px;
+}
+.logo2{
+    margin-left: 1%;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.box{
+    background: url(valoimg/China_CG_EndMap_Full.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        height: 100vh; 
+        width: 100vw; 
+        position: absolute; 
+        top: 0;
+        left: 0;
+        z-index: -1;
+        filter:blur(3.5px);
+        background-attachment: fixed;
+}

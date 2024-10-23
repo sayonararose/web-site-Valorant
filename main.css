@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 2; 
+    z-index: 1; 
 }
 
 .item-content-wraper::before {
@@ -61,3 +61,84 @@
     padding:20px;
     z-index: 10;
 }
+/* Стільниця (стандартна версія) */
+@media only screen and (max-width: 1024px) {
+    /* Планшетна версія */
+    .navbar {
+      flex-direction: column; /* Вертикальне розташування навігації */
+      align-items: center;
+    }
+  
+    .logo2 img {
+      width: 200px; /* Зменшити розмір логотипа для планшетної версії */
+    }
+  
+    .nav-list {
+      flex-direction: column; /* Вертикальне меню на планшетах */
+      margin-left: 0;
+    }
+  
+    .nav-list a {
+      margin-left: 0;
+      font-size: 16px; /* Зменшений шрифт для планшетів */
+    }
+  
+    .item-content-wraper {
+      width: 60%; /* Збільшення ширини блоку на планшетах */
+    }
+  
+    .item-content-title {
+      font-size: 3rem; /* Зменшити заголовок */
+      left: 10%; /* Зміна позиції */
+    }
+  
+    .item-content-description {
+      font-size: 1.2rem; /* Зміна шрифту для опису */
+      left: 5%; /* Зміна позиції для планшетів */
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* Мобільна версія */
+    .navbar {
+      padding: 0 5%;
+    }
+  
+    .logo img, .logo2 img {
+      width: 100px; /* Зменшення розміру логотипів на мобільних пристроях */
+      height: 50px;
+      align-items: center;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-list a {
+      font-size: 14px; /* Менший шрифт для мобільних пристроїв */
+    }
+  
+    .item-content-wraper {
+      width: 80%; /* Збільшення ширини блоку для мобільних */
+      top: 10%;
+      left: 10%;
+    }
+  
+    .item-content-title {
+      font-size: 2.5rem; /* Зменшення заголовку для мобільних */
+      left: 5%; /* Позиціювання заголовка */
+    }
+  
+    .item-content-description {
+      font-size: 1rem; /* Зменшений шрифт для опису */
+      left: 5%; /* Позиціювання для мобільних */
+      top: 70%;
+    }
+  
+    .background-image {
+      background-size: cover;
+      background-attachment: scroll; /* Відключення фіксованого бекграунду для мобільних */
+    }
+  }
+  
